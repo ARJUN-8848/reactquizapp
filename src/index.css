@@ -1,0 +1,185 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: radial-gradient(circle, #e0eafc, #cfdef3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* App Container */
+.App {
+  background: #ffffff;
+  border-radius: 18px;
+  box-shadow: 0 16px 60px rgba(0, 0, 0, 0.2);
+  max-width: 520px;
+  width: 100%;
+  padding: 40px;
+  text-align: center;
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+/* Fade-In Animation */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(-20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+/* Heading */
+.heading-txt {
+  font-size: 36px;
+  margin-bottom: 30px;
+  color: #444;
+  font-weight: 600;
+  text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Question Container */
+.container {
+  margin-top: 25px;
+}
+
+/* Question Text */
+.question {
+  font-size: 24px;
+  margin-bottom: 25px;
+  color: #555;
+  font-weight: 600;
+  background: #f3f8fe;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Option Container */
+.oprion-container {
+  margin-bottom: 30px;
+}
+
+/* Option Buttons */
+.option-btn {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 18px;
+  background-color: #ffffff;
+  color: #333;
+  transition: all 0.3s ease, transform 0.2s;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.option-btn:hover {
+  background: linear-gradient(135deg, #74c0fc, #a9def9);
+  color: white;
+  transform: translateY(-3px);
+}
+
+.checked {
+  background: linear-gradient(135deg, #5c6bc0, #7a8ccb);
+  color: white;
+  box-shadow: 0 6px 15px rgba(92, 107, 192, 0.4);
+}
+
+/* Next Button */
+#next-button {
+  background: linear-gradient(135deg, #72edf2, #5151e5);
+  color: white;
+  border: none;
+  padding: 15px 25px;
+  border-radius: 32px !important;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+  transition: all 0.3s ease, transform 0.2s;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+#next-button:hover {
+  background: linear-gradient(135deg, #5aa9e6, #4a6cfa);
+  transform: translateY(-3px);
+}
+
+/* Score Display */
+.show-score {
+  text-align: center;
+  font-size: 26px;
+  margin-top: 30px;
+  color: #444;
+  background: #f9f9f9;
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.show-score button {
+  margin-top: 15px;
+  background: linear-gradient(135deg, #ff7e5f, #feb47b);
+  color: white;
+  border: none;
+  padding: 14px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  transition: background 0.3s, transform 0.2s;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.show-score button:hover {
+  background: linear-gradient(135deg, #ff5e62, #ff9966);
+  transform: translateY(-3px);
+}
+
+/* Custom scrollbar for a modern look */
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #e0eafc;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, #5151e5, #72edf2);
+  border-radius: 5px;
+}
+/* Question Number Styling */
+#question-number {
+  margin-right: 8px; /* Adjust space as needed */
+  font-weight: bold;
+  color: #34495e;
+}
+
+#question-txt {
+  color: #444;
+}
+/* WhatsApp Share Button */
+/* WhatsApp Share Button */
+#whatsapp-share-button {
+  background-color: #25d366;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 32px;
+  cursor: pointer;
+  font-size: 18px;
+  margin-top: 15px; /* Adds space above the button */
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+#whatsapp-share-button:hover {
+  background-color: #20b857;
+  transform: translateY(-2px);
+}

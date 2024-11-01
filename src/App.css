@@ -1,0 +1,134 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #74ebd5 0%, #acb6e5 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* App Container */
+.App {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
+  max-width: 500px;
+  width: 100%;
+  padding: 40px 30px;
+  text-align: center;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Fade-In Animation */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(-20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+/* Heading */
+.heading-txt {
+  font-size: 32px;
+  margin-bottom: 25px;
+  color: #333;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Question Container */
+.container {
+  margin-top: 20px;
+}
+
+/* Question Text */
+.question {
+  font-size: 22px;
+  margin-bottom: 20px;
+  color: #444;
+  font-weight: bold;
+}
+
+/* Option Container */
+.oprion-container {
+  margin-bottom: 25px;
+}
+
+/* Option Buttons */
+.option-btn {
+  display: block;
+  width: 100%;
+  padding: 14px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 18px;
+  background-color: #ffffff;
+  color: #333;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.option-btn:hover {
+  background-color: #e3f2fd;
+  transform: translateY(-2px);
+}
+
+.checked {
+  background-color: #5c6bc0;
+  color: white;
+  box-shadow: 0 6px 15px rgba(92, 107, 192, 0.3);
+}
+
+/* Next Button */
+#next-button {
+  background-color: #64b5f6;
+  color: white;
+  border: none;
+  padding: 14px 24px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 20px;
+  transition: background-color 0.3s, transform 0.2s;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+#next-button:hover {
+  background-color: #42a5f5;
+  transform: translateY(-2px);
+}
+
+/* Score Display */
+.show-score {
+  text-align: center;
+  font-size: 24px;
+  margin-top: 25px;
+  color: #333;
+  background: #f9f9f9;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.show-score button {
+  margin-top: 12px;
+  background-color: #ef5350;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.show-score button:hover {
+  background-color: #e53935;
+  transform: translateY(-2px);
+}
